@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya's sample image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .page {
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        left: 100px;
+        right: 0;
+        background-color: #f2f3f4;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .side-bar {
+        height: 100%;
+        width: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f5f5f5;
+        padding-top: 20px;
+        box-shadow: 20px 20px 50px #d0d0d0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      #search-bar::placeholder {
+        font-weight: bold;
+        color: black;
+        opacity: 0.8;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .students,
+      .lesson,
+      .settings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15% 0 20% 0;
+        font-size: 12px;
+        opacity: 0.5;
+        font-weight: bold;
+      }
+      img {
+        width: 30px;
+        padding-bottom: 3%;
+      }
+      .lesson {
+        background-color: lightblue;
+        border-left: 3px solid blue;
+        font-weight: bold;
+        opacity: 0.9;
+      }
+      #triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-right: 10px solid #555;
+        border-bottom: 5px solid transparent;
+        position: fixed;
+        top: 140px;
+        left: 150px;
+      }
+
+      .triangle-video {
+        display: flex;
+        flex-direction: row;
+        opacity: 0.6;
+      }
+      #search-bar {
+        width: 65%;
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        position: fixed;
+        top: 200px;
+        left: 300px;
+      }
+      #upload {
+        background-color: #ffffff;
+        position: fixed;
+        top: 300px;
+        left: 300px;
+        padding: 60px 50px 60px 50px;
+      }
+
+      #videos {
+        position: fixed;
+        top: 120px;
+        left: 165px;
+      }
+      .center-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: smaller;
+      }
+      #or {
+        position: fixed;
+        top: 250px;
+      }
+      .circle {
+        width: 0px;
+        height: 0px;
+        border-right: 12px solid transparent;
+        border-top: 12px solid black;
+        border-left: 12px solid black;
+        border-bottom: 12px solid black;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        transform: rotate(45deg);
+        position: fixed;
+        top: 20px;
+        left: 37px;
+      }
+      .curve1 {
+        width: 36px;
+        height: 18px;
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border: 3px solid black;
+        border-bottom: 0;
+        transform: rotate(-90deg);
+        position: fixed;
+        left: 18px;
+        top: 21px;
+      }
+      .curve2 {
+        width: 26px;
+        height: 26px;
+        border-radius: 0 0 0 300px;
+        border-bottom: solid black;
+        border-left: solid black;
+        position: fixed;
+        top: 31px;
+        left: 20px;
+      }
+
+      .students {
+        padding-top: 90%;
+      }
+      .symbol {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="triangle-video">
+        <div id="triangle-left"></div>
+        <p id="videos">Videos</p>
+      </div>
+      <div class="center-body">
+        <input type="text" id="search-bar" placeholder="Insert URL here" />
+        <p id="or">or</p>
+        <p id="upload">upload</p>
+      </div>
+    </div>
+    <div class="side-bar">
+      <div class="symbol">
+        <div class="circle"></div>
+        <div class="curve1"></div>
+        <div class="curve2"></div>
+      </div>
+      <div class="students">
+        <img src="https://img.icons8.com/windows/32/000000/person-male.png" />
+        <a href="#">Students</a>
+      </div>
+      <div class="lesson">
+        <img src="https://img.icons8.com/ios/50/000000/book.png" />
+        <a href="#">Lesson Plan</a>
+      </div>
+      <div class="settings">
+        <img src="https://img.icons8.com/windows/32/000000/settings--v1.png" />
+        <a href="#">Settings</a>
+      </div>
+    </div>
+  </body>
+</html>
